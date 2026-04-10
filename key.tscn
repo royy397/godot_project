@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cx8ehjdisepmt"]
+
+[ext_resource type="Script" uid="uid://2imra465vhj5" path="res://key.gd" id="1_up4cr"]
+
+[node name="Panel" type="Panel" unique_id=1244433186]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_up4cr")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=665601408]
+
+[node name="Label" type="Label" parent="." unique_id=1257390283]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

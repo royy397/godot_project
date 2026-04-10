@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c6pkccgun0x0q"]
+
+[ext_resource type="Script" uid="uid://6oyucdyu8dct" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Control" type="Control" unique_id=1103835008]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ig7tw")
+
+[node name="Label" type="Label" parent="." unique_id=1873194022]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "piano"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=911533926]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=120168726]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
