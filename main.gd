@@ -19,6 +19,7 @@ var key_colors = [
 ]
 
 func _ready():
+	DisplayServer.window_set_title("🎹 Piano Game")
 	_build_piano()
 
 func _build_piano():

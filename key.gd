@@ -45,10 +45,11 @@ func _gui_input(event: InputEvent):
 
 func _on_pressed():
 	$AudioStreamPlayer.play()
-	add_theme_stylebox_override("panel", _make_stylebox(color_pressed))
-	# Animate: scale down slightly to feel "clicked"
+	var random_color = Color.from_hsv(randf(), 0.8, 1.0)
+	add_theme_stylebox_override("panel", _make_stylebox(random_color))
 	var tween = create_tween()
 	tween.tween_property(self, "scale", Vector2(0.95, 0.95), 0.05)
+	print(note_name)
 
 func _on_released():
 	add_theme_stylebox_override("panel", _make_stylebox(color_normal))
